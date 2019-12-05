@@ -9,7 +9,7 @@
  }
 
  .container {
-   width: 901px;
+   width: 900px;
    margin: 0 auto;
    /* background-color: #ff99ff; */
  }
@@ -110,12 +110,7 @@
   margin-bottom: 52px;
  }
 
- .button {
-   width: 901px;
-   padding-bottom: 70px;
-}
-
- .load {
+/*  .load {
    margin: 0 auto;
    padding: 0;
    width: 164px;
@@ -125,5 +120,14 @@
    line-height: 24px;
    background-color: #fff;
    border: 1px solid #626262;
- }
+ } */
 
+ .load {
+   font-size: 20px;
+   color: #626262;
+   border: 1px solid #626262;
+   background: #ffffff;
+   padding: 15px 30px;
+   margin: auto;
+   display: block;
+ }

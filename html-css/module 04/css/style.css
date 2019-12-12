@@ -8,9 +8,12 @@ html {
     box-sizing: inherit;
 }
 
+body {
+    margin: 0;
+}
+
 .container {
-    width: 1170px;
-    height: 1800px;
+    width: 1110px;
     margin: 0 auto;
 }
 
@@ -59,6 +62,7 @@ html {
 }
 
 .nav-link {
+    display: block;
     color: #0f0101;
     font-weight: 700;
     text-transform: uppercase;
@@ -66,6 +70,11 @@ html {
     line-height: 24px;
     text-align: right;
 }
+
+.nav-link:hover {
+    color: #7fd9c7;
+}
+
 
 .nav-list-item:first-child {
     color: #1abc9c;
@@ -111,6 +120,10 @@ html {
     display: block;
     margin: 0;
     padding: 0;
+}
+
+.products a {
+    display: block;
 }
 
 .products {
@@ -178,11 +191,11 @@ html {
     text-align: center;
 }
 
-/* .name-products:nth-child(5) {
+.name-products:nth-child(5) {
     background-color: #1abc9c;
 }
 
-.price {
+/* .price {
     background-color: #7fd9c7;
 } */
 
@@ -194,7 +207,8 @@ h2 {
     text-transform: uppercase;
     color: #515151;
 
-    margin-bottom: 92px;
+    margin: 0;
+    margin-bottom: 80px;
 }
 
 h2.featured::after {
@@ -218,7 +232,7 @@ h2.latest::after {
     margin-top: 32px;
 }
 
-p.text1 {
+.text-content {
     font-family:'Roboto', serif;
     font-size: 18px;
     font-weight: 700;
@@ -226,7 +240,7 @@ p.text1 {
     color: #555252;
 }
 
-p.text1::after {
+.text-content::after {
     display: block;
     width: 136px;
     height: 3px;
@@ -235,29 +249,45 @@ p.text1::after {
     margin-top: 15px;
 }
 
-p.text2 {
+.text-description {
     font-family:'Roboto', serif;
     font-size: 14px;
     line-height: 26px;
     color: #8e8c8c;
 }
 
-button {
+.text-content,
+.text-description {
+    margin: 0;
+}
+
+.text-content {
+    margin-bottom: 30px;
+}
+
+.text-description {
+    margin-bottom: 20px;
+}
+
+.read-more {
     font-size: 16px;
     color: #f3fbf9;
     background-color: #4ec6ab;
     padding: 18px 47px;
-    display: block;
+    display: inline-block;
 }
 
-.button:hover {
+.read-more:hover {
     color: #7fd9c7;
+}
+
+.read-more {
+    margin-bottom: 45px;
 }
 
 .article {
     display: block;
     width: 350px;
-    height: 496px;
 
     float: left;
     margin-right: 30px;

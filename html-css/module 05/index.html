@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
- <div class="container">
   <header class="header">
+   <div class="container">
     <nav class="navigation clearfix">
      <a href="" class="mart">Mart</a>
      <ul class="nav-list">
@@ -29,78 +29,90 @@
           <a class="nav-link contact-us"href="">Contact us</a></li>
      </ul>
     </nav>
+   </div>
   </header>
   <main>
    <div class="slider">
     <button class="slider-ctrl slider-ctrl-prev">prev</button>
     <button class="slider-ctrl slider-ctrl-next">next</button>
     <img src="img/slide2.png" width="1600" height="600">
-    <div class="slider-content">
-      <h2 class="title-slider">Affordable Paris Tours</h2>
-      <p class="option-slider">City tours / Tour tickets / Tour guides</p>
-    </div>
+    <ul class="slider-content">
+      <li>
+       <h2 class="title-slider">Affordable Paris Tours</h2>
+       <p class="option-slider">City tours / Tour tickets / Tour guides</p>
+      </li>
+    </ul>
    </div>
    <section class="new-collection">
+    <div class="container">
     <h2 class="title-collection">New collection</h2>
     <ul class="collection-list clearfix">
      <li class="collection">
-      <a href="">
-        <img src="img/image.png" width="255" height="322">
-        <div>
+        <img src="img/image.png" alt="Blue tshirt" width="255" height="322">
+        <div class="overlay">
+          <ul class="icon-list">
+            <li class="icon-list-item"><button class="icon icon-like">Like</button></li>
+            <li class="icon-list-item"><button class="icon icon-arrows">Arrows</button></li>
+            <li class="icon-list-item"><button class="icon icon-time">Time</button></li>
+            <li class="icon-list-item"><button class="basket"><img class="basket-img" src="img/icon1.png" width="28" height="27">
+              <span>Add to cart</span></button></li>
+          </ul>
+        </div>
+        <a href="">
          <h3 class="name">Blue tshirt</h3>
          <p class="price">$26</p>
-        </div>
-      </a>
+        </a>
      </li>
      <li class="collection">
-      <a href="">
-        <img src="img/image2.png" width="255" height="322">
-        <div>
+        <img src="img/image2.png" alt="Woman shirt" width="255" height="322">
+        <div class="overlay">
+          <ul class="icon-list">
+            <li class="icon-list-item"><button class="icon icon-like">Like</button></li>
+            <li class="icon-list-item"><button class="icon icon-arrows">Arrows</button></li>
+            <li class="icon-list-item"><button class="icon icon-time">Time</button></li>
+            <li class="icon-list-item"><button class="basket"><img class="basket-img" src="img/icon1.png" width="28" height="27">
+              <span>Add to cart</span></button></li>
+          </ul>
+        </div>
+        <a href="">
          <h3 class="name">Woman shirt</h3>
          <p class="price">$31</p>
-        </div>
-      </a>
+        </a>
      </li>
      <li class="collection">
-      <a href="">
-        <img src="img/image3.png" width="255" height="322">
-        <div>
+        <img src="img/image3.png" alt="Yellow tshirt" width="255" height="322">
+        <div class="overlay">
+          <ul class="icon-list">
+            <li class="icon-list-item"><button class="icon icon-like">Like</button></li>
+            <li class="icon-list-item"><button class="icon icon-arrows">Arrows</button></li>
+            <li class="icon-list-item"><button class="icon icon-time">Time</button></li>
+            <li class="icon-list-item"><button class="basket"><img class="basket-img" src="img/icon1.png" width="28" height="27">
+              <span>Add to cart</span></button></li>
+          </ul>
+        </div>
+        <a href="">
          <h3 class="name">Yellow tshirt</h3>
          <p class="price">$21</p>
-        </div>
-      </a>
+        </a>
      </li>
      <li class="collection">
-      <a href="">
-        <img src="img/image4.png" width="255" height="322">
-        <div>
+        <img src="img/image4.png" alt="Cool lingerie" width="255" height="322">
+        <div class="overlay">
+          <ul class="icon-list">
+            <li class="icon-list-item"><button class="icon icon-like">Like</button></li>
+            <li class="icon-list-item"><button class="icon icon-arrows">Arrows</button></li>
+            <li class="icon-list-item"><button class="icon icon-time">Time</button></li>
+            <li class="icon-list-item"><button class="basket"><img class="basket-img" src="img/icon1.png" width="28" height="27">
+              <span>Add to cart</span></button></li>
+          </ul>
+        </div>
+        <a href="">
          <h3 class="name">Cool lingerie</h3>
          <p class="price">$56</p>
-        </div>
-      </a>
+        </a>
      </li>
     </ul>
-     <div class="overlay">
-         <ul class="icon-list">
-             <li>
-                 <a href="" class="icon-like" >
-                     <span class="icons">Like</span>
-                 </a>
-             </li>
-             <li>
-                 <a href="" class="icon-arrows" >
-                     <span class="icons">Arrows</span>
-                 </a>
-             </li>
-             <li>
-                 <a href="" class="icon-time">
-                     <span class="icons">Time</span>
-                 </a>
-             </li>
-         </ul>
-         <img class="basket" src="img/icon1.png" width="28" height="27">
-         <button class="button-overlay">Add to cart</button>
-     </div>
+    </div>
    </section>
    <footer class="footer clearfix">
        <div class="info">
@@ -112,6 +124,5 @@
        </div>
    </footer>
   </main>
- </div>
 </body>
 </html>

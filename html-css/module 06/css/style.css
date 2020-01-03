@@ -13,10 +13,7 @@ body {
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
     width: 1110px;
-    min-height: 100vh;
     margin: 0 auto;
 }
 
@@ -116,8 +113,9 @@ body {
     text-transform: uppercase;
     color: #333333;
 
-    margin: 0;
     padding: 0;
+    margin: 0;
+    margin-bottom: 65px;
 }
 
 h2::after {
@@ -129,7 +127,6 @@ h2::after {
     bottom: 32px;
     margin: 0 auto;
     margin-top: 40px;
-    margin-bottom: 65px;
 }
 
 .flex-container {
@@ -145,25 +142,48 @@ h2::after {
     padding-bottom: 86px;
 }
 
-.service-block {
+.service-content {
     position: relative;
     width: 370px;
-    height: 80px;
+    padding-left: 80px;
     text-align: left;
-}
-
-.service-content {
-    position: absolute;
-    left: 80px;
-    top: 0;
-    width: 290px;
     margin: 0;
 }
 
-.service-img {
+.content1::before {
+    content: url(../img/Icon1.png);
     position: absolute;
     left: 30px;
-    top: 0;
+}
+
+.content2::before {
+    content: url(../img/Icon2.png);
+    position: absolute;
+    left: 30px;
+}
+
+.content3::before {
+    content: url(../img/Icon3.png);
+    position: absolute;
+    left: 30px;
+}
+
+.content4::before {
+    content: url(../img/Icon4.png);
+    position: absolute;
+    left: 30px;
+}
+
+.content5::before {
+    content: url(../img/Icon5.png);
+    position: absolute;
+    left: 30px;
+}
+
+.content6::before {
+    content: url(../img/Icon6.png);
+    position: absolute;
+    left: 30px;
 }
 
 .title-service-item {
@@ -261,10 +281,10 @@ h2::after {
     background-image: url(../img/Social-icon4.png);
 }
 
-.icon {
+.icon-link {
+    display: block;
     width: 55px;
     height: 55px;
-    border: none;
     background-color: #fce38a;
     background-repeat: no-repeat;
     background-position: center;
@@ -282,7 +302,7 @@ h2::after {
     list-style: none;
 }
 
-.icon:hover {
+.icon-link:hover {
     background-color: #95e1d3;
     opacity: 1;
 }
@@ -294,6 +314,9 @@ h2::after {
     text-transform: uppercase;
     text-align: center;
     color: #333333;
+
+    padding-top: 25px;
+    margin: 0;
 }
 
 .profession {
@@ -302,6 +325,8 @@ h2::after {
     line-height: 24px;
     text-align: center;
     color: #c6c6c6;
+
+    margin: 0;
 }
 
 .footer {

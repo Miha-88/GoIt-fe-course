@@ -267,11 +267,21 @@ h2.title-slider {
 }
 
 .basket {
+    /* position: relative; */
     display: block;
     width: 166px;
     height: 50px;
     border: 1px solid #ffffff;
     background-color: #000000;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.basket {
+    background-image: url(../img/icon1.png);
+    }
+
+.basket {
     font-family: 'Roboto', serif;
     font-size: 14px;
     text-transform: uppercase;
@@ -281,20 +291,18 @@ h2.title-slider {
     opacity: 0.5;
 
     margin: 0;
-    padding: 0;
-}
-
-.basket span {
     padding: 0 16px;
 }
 
-.basket-img {
-    margin: 0;
-    padding: 0;
-}
+/* .basket::before {
+    content: url(../img/icon1.png);
+    position: absolute;
+    left: 12px;
+    bottom: 8px;
+} */
 
 .basket:hover {
-    background: #000000;
+    background-color: #000000;
     opacity: 1;
 }
 
@@ -429,7 +437,7 @@ h2.title-collection::after {
 
 .info {
     float: left;
-    width: 555px;
+    width: 50%;
 }
 
 .reserved,
@@ -457,4 +465,3 @@ h2.title-collection::after {
 .sign {
     color: #3f9081;
 }
- 

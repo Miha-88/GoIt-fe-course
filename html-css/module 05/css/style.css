@@ -271,10 +271,11 @@ h2.title-slider {
     display: block;
     width: 166px;
     height: 50px;
-    border: 1px solid #ffffff;
-    background-color: #000000;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0);
     background-repeat: no-repeat;
-    background-position: left;
+    background-position-x: 10%;
+    background-position-y: 50%;
 }
 
 .basket {
@@ -287,8 +288,7 @@ h2.title-slider {
     text-transform: uppercase;
     text-align: right;
     line-height: 17px;
-    color: #ffffff;
-    opacity: 0.5;
+    color: rgb(255, 255, 255);
 
     margin: 0;
     padding: 0 16px;
@@ -331,11 +331,10 @@ h2.title-slider {
     display: block;
     width: 50px;
     height: 50px;
-    border: 1px solid #ffffff;
-    background-color: #000000;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0);
     background-repeat: no-repeat;
     background-position: center;
-    opacity: 0.5;
 
     margin: 0;
 }

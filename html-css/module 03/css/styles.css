@@ -26,6 +26,17 @@
   list-style: none;
   text-align: center;
 }
+ .nav-list-item {
+   display: inline-block;
+   margin: 0;
+   padding: 0;
+  
+   margin-right: 105px;
+ }
+
+ .nav-list-item:last child {
+   margin-right: 0;
+ }
 
 .nav-link {
   display: block;
@@ -39,19 +50,7 @@
 
  .nav-link:hover {
    color: #57c6f8;
- }
-
- .nav-list-item {
-   display: inline-block;
-   margin: 0;
-   padding: 0;
-  
-   margin-right: 95px;
- }
-
- .nav-list-item:last child {
-   margin-right: 0;
- }
+}
 
  .nav {
    font-family: 'Ubuntu';

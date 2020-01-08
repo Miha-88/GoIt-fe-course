@@ -37,49 +37,42 @@
   text-align: right;
 }
 
+ .nav-link:hover {
+   color: #57c6f8;
+ }
+
  .nav-list-item {
    display: inline-block;
    margin: 0;
    padding: 0;
- }
-
- .navigation .lifestyle {
-   margin-right: 121px;
-   color: #57c6f8;
- }
-
- .navigation .photodiary {
-   margin-right: 102px;
- }
-
- .navigation .music {
+  
    margin-right: 95px;
  }
 
- .navigation .travel {
+ .nav-list-item:last child {
    margin-right: 0;
  }
 
  .nav {
-     font-family: 'Ubuntu';
-     font-size: 14px;
-     text-transform: uppercase;
-     color: #b4ad9e;
-     line-height: 17px;
+   font-family: 'Ubuntu';
+   font-size: 14px;
+   text-transform: uppercase;
+   color: #b4ad9e;
+   line-height: 17px;
  }
 
  h2 {
-     font-family: 'Playfair Display', serif;
-     font-size: 30px;
-     color: #626262;
-     line-height: 36px;
+   font-family: 'Playfair Display', serif;
+   font-size: 30px;
+   color: #626262;
+   line-height: 36px;
 }
 
 .text-content {
-    font-family: 'Playfair Display', serif;
-    font-size: 14px;
-    color: #626262;
-    line-height: 24px;
+   font-family: 'Playfair Display', serif;
+   font-size: 14px;
+   color: #626262;
+   line-height: 24px;
 }
 
  img {

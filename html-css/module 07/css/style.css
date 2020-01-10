@@ -69,13 +69,16 @@ body {
 .nav-list {
     display: flex;
     justify-content: space-between;
-    width: 480px;
-    height: 41px;
+    min-width: 480px;
     list-style: none;
     text-align: center;
 
     margin: 0;
     padding: 0;
+}
+
+.nav-link {
+    display: block;
 }
 
 .nav-link {
@@ -191,14 +194,11 @@ body {
 .contact {
     position: relative;
     padding-top: 72px;
+    min-height: 675px;
     background-color: #222222;
-}
-
-.img-maps {
-    max-width: 100%;
-    display: block;
-    height: auto;
-    margin-left: auto;
+    background-image: url(../img/Map\ Image.png);
+    background-repeat: no-repeat;
+    background-position: right;
 }
 
 .sign-form input {
@@ -236,23 +236,32 @@ body {
 .form-container {
     position: absolute;
     top: 255px;
+    left: 0;
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
 
 input {
-    width: 540px;
+    width: 455px;
     height: 50px;
     border-radius: 2px;
 }
 
 
 textarea {
-    width: 540px;
+    width: 455px;
     height: 210px;
     border-radius: 5px;
     resize: none;
+}
+
+.input-block {
+    margin-left: 205px;
+}
+
+.textarea-block {
+    margin-right: 205px;
 }
 
 
@@ -277,9 +286,10 @@ textarea {
 
     margin: 0 auto;
     position: absolute;
-    bottom: 75px;
+    top: 495px;
     left: 50%;
     transform: translateX(-50%);
+
 }
 
 .sign-form button {
@@ -290,4 +300,8 @@ textarea {
     text-align: center;
     line-height: 22px;
     color: #ffffff;
+}
+
+button:hover {
+    background-color:#b8fe36 ;
 }

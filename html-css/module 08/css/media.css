@@ -1,0 +1,70 @@
+@media (min-width: 600px) and (max-width: 1169px) {
+  .navigation {
+      flex-direction: row;
+      min-height: 40px;
+      padding: 0 50px;
+  }
+
+  .title-holiday {
+      font-size: 52px;
+      line-height: 62px;
+  }
+
+  .text-holiday {
+      font-size: 24px;
+      line-height: 70px;
+  }
+
+  .team-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 490px;
+  }
+
+  .team-list-item:nth-last-child(-n+2) {
+      margin-bottom: 0;
+  }
+
+  .team-list-item {
+      margin-right: 20px;
+  }
+
+  .team-list-item:nth-child(2n) {
+      margin-right: 0;
+  }
+
+}
+
+@media (min-width: 1170px) {
+    .navigation {
+      flex-direction: row;
+      min-height: 40px;
+      padding: 0 205px;
+    }
+
+    .title-holiday {
+        font-size: 52px;
+        line-height: 62px;
+    }
+
+    .text-holiday {
+        font-size: 24px;
+        line-height: 70px;
+    }
+
+    .team-list {
+        display: flex;
+        max-width: 940px;
+    }
+
+    .team-list-item {
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+
+    .team-list-item:last-child {
+        margin-right: 0;
+    }
+
+}

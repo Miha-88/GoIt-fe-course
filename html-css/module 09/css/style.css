@@ -1,1 +1,249 @@
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/montserrat-v14-latin-400.woff') format('woff')
+  }
 
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/montserrat-v14-latin-700.woff') format('woff')
+  }
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/roboto-v20-latin-300.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v20-latin-400.woff') format('woff')
+}
+
+body {
+    font-family: 'Montserrat', 'Roboto', sans-serif;
+    margin: 0;
+}
+
+.wrapper {
+    background-image: url(../img/Promo.png);
+    background-position: center;
+    min-height: 700px;
+}
+
+.container {
+    min-width: 320px;
+    margin: 0 auto;
+}
+
+.buttons {
+    padding-bottom: 120px;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 24px;
+    color: #ffffff;
+    cursor: pointer;
+
+    padding: 8px 0;
+}
+
+.logo:hover {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.sign-up,
+.log-in,
+.link-holiday-partners {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+}
+.sign-up,
+.log-in {
+    margin: 0;
+    padding: 9px 17px;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0);
+    cursor: pointer;
+}
+
+.log-in {
+    border: 0;
+}
+
+.holiday-dreams {
+    min-height: 245px;
+}
+
+.title-holiday {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+
+    margin: 0;
+}
+
+.text-holiday {
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 40px;
+    text-align: center;
+    color: #ffffff;
+
+    margin: 0;
+}
+
+.link-holiday-partners {
+    background-color: #ff4e50;
+    border-radius: 20px;
+    padding: 14px 25px;
+}
+
+.link-holiday-partners:hover {
+    background: #ffffff;
+    color: #ff4e50;
+    text-decoration: none;
+    border: 2px solid #ff4e50;
+}
+
+
+.title-team {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #333333;
+
+    margin: 0;
+    padding: 65px 0 35px;
+}
+
+.card {
+    position: relative;
+    border: none;
+    min-width: 290px;
+}
+
+.card-img::after {
+    content: url(../img/Icon\ 1.png);
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+.card-img-2::after {
+    content: url(../img/Icon\ 2.png);
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+.card-img-3::after {
+    content: url(../img/Icon\ 3.png);
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+.card-img-4::after {
+    content: url(../img/Icon\ 4.png);
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+
+.card-title {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #333333;
+    text-align: center;
+
+    margin: 0;
+    padding: 14px 0;
+}
+
+.card-text {
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #b8b8b8;
+    text-align: center;
+
+    margin: 0;
+}
+
+.other-partners {
+    border: 2px solid #ff4e50;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 12px 23px;
+
+    margin: auto;
+}
+
+.other-partners {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ff4e50;
+    text-align: center;
+    text-decoration: none;
+}
+
+.other-partners:hover {
+    background: #ff4e50;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.link-partners {
+    padding-top: 40px;
+    padding-bottom: 73px;
+}
+
+@media (min-width: 768px) {
+    .title-holiday {
+        font-size: 52px;
+        line-height: 62px;
+    }
+
+    .text-holiday {
+        font-size: 24px;
+        line-height: 70px;
+    }
+}

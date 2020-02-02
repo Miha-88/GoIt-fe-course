@@ -114,12 +114,17 @@ body {
 .nav-list__link:focus,
 .nav-list__link:hover {
     color: #fce38a;
+    fill:#fce38a;
 }
 .nav-list__link:hover::after {
     opacity: 1;
 }
 
-.nav-list__link--search
+.nav-list__icon {
+    width: 32px;
+    height: 32px;
+    fill:#ffffff;
+}
 
 .first-screen {
     display: -webkit-box;

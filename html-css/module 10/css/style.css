@@ -48,6 +48,26 @@ body {
     cursor: pointer;
 }
 
+.icons {
+        display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+}
+
+.icon {
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin: 0 auto;
+}
+
 .container {
     width: 1170px;
     margin: 0 auto;
@@ -87,6 +107,9 @@ body {
 }
 
 .nav-list__item {
+     -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: 0;
     padding: 0;
 }
@@ -129,8 +152,6 @@ body {
 }
 
 .nav-list__icon {
-    width: 32px;
-    height: 32px;
     fill:#ffffff;
 }
 
@@ -352,21 +373,11 @@ body {
 }
 
 .icon-list__link {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 55px;
-    height: 55px;
     background-color: #fce38a;
-    margin: 0;
 }
 
 .icon-svg {
-    display: block;
-    width: 32px;
-    height: 32px;
     fill: #f38181;
-    margin: 0 auto;
 }
 
 .icon-list__link:hover {

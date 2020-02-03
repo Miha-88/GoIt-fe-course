@@ -350,7 +350,6 @@ body {
 }
 
 .icon-list__link {
-    display: block;
     width: 55px;
     height: 55px;
     background-color: #fce38a;

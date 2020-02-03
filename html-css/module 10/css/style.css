@@ -114,10 +114,18 @@ body {
 .nav-list__link:focus,
 .nav-list__link:hover {
     color: #fce38a;
-    fill:#fce38a;
 }
+
 .nav-list__link:hover::after {
     opacity: 1;
+}
+
+.nav-list__link:hover .nav-list__icon {
+    fill:#fce38a;
+}
+
+.nav-list__link--icon::after {
+    display: none;
 }
 
 .nav-list__icon {
@@ -130,6 +138,10 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -339,16 +351,30 @@ body {
     margin: 0;
 }
 
-.icon-list-link {
-    display: inline-block;
+.icon-list__link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    background-color: #fce38a;
     margin: 0;
 }
 
 .icon-svg {
     display: block;
-    width: 55px;
-    height: 55px;
+    width: 32px;
+    height: 32px;
     fill: #f38181;
+    margin: 0 auto;
+}
+
+.icon-list__link:hover {
+    background-color: #f38181;
+}
+
+.icon-list__link:hover .icon-svg {
+    fill:#ffffff;
 }
 
 .footer {

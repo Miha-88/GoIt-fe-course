@@ -2,10 +2,10 @@
 
 const logins = ["Mango", "robotGoogles", "Poly", "Aj4x1sBozz", "qwerty123"];
 
-const min = 3;
-const max = 17;
-
 const isLoginValid = function(login) {
+  const min = 3;
+  const max = 17;
+
   if (login.length > min && login.length < max) {
     return true;
   } else {
@@ -22,61 +22,17 @@ const isLoginUnique = function(allLogins, login) {
 };
 
 const addLogin = function(allLogins, login) {
-  let message;
-
-  isLoginValid("Ajax");
-  isLoginValid("robotGoogles");
-  isLoginValid("Zod");
-  isLoginValid("jqueryisextremelyfast");
-
-  if (isLoginValid === false) {
-    return (message = "Ошибка! Логин должен быть от 4 до 16 символов");
+  if (isLoginValid(login) === false) {
+    return "Ошибка! Логин должен быть от 4 до 16 символов";
   } else {
-    isLoginUnique(logins, "Ajax");
-    isLoginUnique(logins, "robotGoogles");
-    isLoginUnique(logins, "Zod");
-    isLoginUnique(logins, "jqueryisextremelyfast");
-
-    if (isLoginUnique === false) {
-      return (message = "Такой логин уже используется!");
+    if (isLoginUnique(allLogins, login) === false) {
+      return "Такой логин уже используется!";
     } else {
       allLogins.push(login);
-      console.log(allLogins);
-      return (message = "Логин успешно добавлен!");
+      return "Логин успешно добавлен!";
     }
   }
 };
-
-//======================================
-
-// const addLogin = function(allLogins, login) {
-//   do {
-//     let message;
-
-//     isLoginValid("Ajax");
-//     isLoginValid("robotGoogles");
-//     isLoginValid("Zod");
-//     isLoginValid("jqueryisextremelyfast");
-
-//     if (isLoginValid === false) {
-//       return (message = "Ошибка! Логин должен быть от 4 до 16 символов");
-//     }
-//   } while (isLoginValid === true);
-//   {
-//     isLoginUnique(logins, "Ajax");
-//     isLoginUnique(logins, "robotGoogles");
-//     isLoginUnique(logins, "Zod");
-//     isLoginUnique(logins, "jqueryisextremelyfast");
-
-//     if (isLoginUnique === false) {
-//       return (message = "Такой логин уже используется!");
-//     } else {
-//       allLogins.push(login);
-//       console.log(allLogins);
-//       return (message = "Логин успешно добавлен!");
-//     }
-//   }
-// };
 
 console.log(addLogin(logins, "Ajax")); // 'Логин успешно добавлен!'
 console.log(addLogin(logins, "robotGoogles")); // 'Такой логин уже используется!'

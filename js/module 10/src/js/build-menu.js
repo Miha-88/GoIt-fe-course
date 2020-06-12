@@ -9,8 +9,6 @@ export const buildMainMenu = () => {
     DARK: 'dark-theme',
   };
 
-  // ---- CHECKING THEME ON PAGE LOADING ---
-
   const locallyStoredTheme = localStorage.getItem('Theme');
 
   if (locallyStoredTheme) {
@@ -22,8 +20,6 @@ export const buildMainMenu = () => {
     }
   }
 
-  //-----------------------------------------
-
   const menuListContainer = document.querySelector('ul.js-menu');
 
   function buildMenu(menu) {
@@ -32,8 +28,6 @@ export const buildMainMenu = () => {
   }
 
   buildMenu(menu);
-
-  //    --------------- BROWSER THEME SWITCH -------------------------------    //
 
   checkbox.addEventListener('change', addTheme);
 

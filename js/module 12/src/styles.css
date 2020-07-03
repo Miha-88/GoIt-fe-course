@@ -24,20 +24,15 @@ body {
   background-image: url('./images/bg-pattern.png');
 }
 
-.search-form {
+.inputForm {
   display: block;
   width: 100%;
   text-align: center;
 }
 
-.country-list {
-  display: block;
-  margin: 20px auto;
-}
-
-.search-form input {
+.inputForm input {
   margin: 0 auto;
-  width: 50%;
+  width: 53%;
   height: 50px;
   margin: 0 auto;
   border-radius: 10px;
@@ -46,20 +41,51 @@ body {
   outline: none;
 }
 
-.matched-country-box {
+.wrapper {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  margin: 0 auto;
+  margin-top: 20px;
 }
 
-.country-header {
-  display: block;
-  width: 100%;
-  text-align: center;
-  line-height: 200%;
+.country_wrapper {
+  padding-right: 30px;
 }
 
-.block {
-  padding: 0 20px;
+.country_capital {
+  font-weight: 600;
+  margin: 0;
+  padding: 0 0 10px 0;
+}
+
+.country_population {
+  font-weight: 600;
+  margin: 0;
+  padding: 0 0 10px 0;
+}
+
+.country_capital--text {
+  font-weight: 400;
+  margin: 0;
+  padding: 0 0 10px 0;
+}
+
+.country_population--text {
+  font-weight: 400;
+  margin: 0;
+  padding: 0 0 10px 0;
+}
+
+.country_list {
+  font-weight: 600;
+  margin: 0;
+}
+
+.country_list--item {
+  font-weight: 400;
+  margin: 0;
+}
+
+.country_flag {
+  height: auto;
+  width: 640px;
 }

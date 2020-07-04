@@ -8,10 +8,15 @@ import country from './templates/country.hbs';
 
 let inputText = document.querySelector('.input_text');
 
-window.addEventListener('keypress', event => {
-  if (event.keyCode == 13) {
-    event.preventDefault();
-  }
+// window.addEventListener('keypress', event => {
+//   if (event.keyCode == 13) {
+//     event.preventDefault();
+//   }
+// });
+
+const searchForm = document.querySelector('#search');
+searchForm.addEventListener('submit', event => {
+  event.preventDefault();
 });
 
 let search = async () => {
